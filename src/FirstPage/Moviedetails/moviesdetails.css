@@ -1,0 +1,14 @@
+.full_details{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.full_details p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1rem;
+}
+.full_details p span{
+    color: black;
+}

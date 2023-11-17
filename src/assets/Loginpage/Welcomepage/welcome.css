@@ -1,0 +1,77 @@
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../../../../Assets/seats.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+.sub-welcome{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2.2rem;
+    height: 50vh;
+    border-radius: 0.3rem;
+    border: 0.5rem rgb(229, 229, 229) solid;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+.signs{
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#btn{
+    /* background-color: black; */
+    background-color: orangered;
+    color: white;
+    /* margin: 1rem; */
+    padding: 0.7rem 1.3rem;
+    border: 1px solid rgb(248, 247, 243);
+    border-radius: 4px;
+}
+input{
+    padding: 0.6rem 1rem;
+    margin-bottom: 1rem;
+}
+a{
+    text-align: center;
+    margin-top: 2rem;
+}
+#btn:hover{
+    background: rgb(237, 236, 236);
+    color: black;
+    cursor: pointer;
+    border: 1px solid orangered;
+}
+
+
+/* Media Query for smartphones */
+@media only screen and (max-width: 600px) {
+    .sub-welcome{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 40vh;
+        width: 70%;
+        border-radius: 0.3rem;
+        border: 0.5rem rgb(229, 229, 229) solid;
+    }
+    input{
+        padding: 0.9rem 1.1rem;
+        margin-bottom: 1rem;
+        border: 2px solid black;
+    }
+  }

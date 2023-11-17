@@ -1,0 +1,61 @@
+#well{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../../../../Assets/camera.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+#wells{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    border: 0.5rem rgb(225, 223, 223) solid;
+}
+.create{
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.create button:hover{
+    background: rgb(178, 177, 177);
+    color: black;
+}
+#head{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media Query for smartphones */
+@media only screen and (max-width: 600px) {
+    #wells{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 2rem;
+        width: 70%;
+        height: 40%;
+        border-radius: 0.3rem;
+        border: 0.5rem rgb(225, 223, 223) solid;
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #in{
+        margin-top: 1.1rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+}

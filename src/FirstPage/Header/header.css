@@ -1,0 +1,151 @@
+.background{
+    height: 80vh;
+    background-image: url(../../../Assets/johnwick.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+.mid2{
+    display: none;
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.top p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 6rem;
+    color: white;
+}
+.mid h1{
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.mid p{
+    margin-top: 2rem;
+}
+button{
+    width: fit-content;
+    padding: 0.5rem;
+    background-color: orangered;
+    color: white;
+    border: transparent;
+    border-radius: 3px;
+    margin-top: 1rem;
+}
+button:hover{
+    width: fit-content;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.search{
+    width: 40vw;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.list{
+    background: orangered;
+    color: white;
+    border: 2px solid orange;
+    font-size: 0.8rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+.signIn{
+    margin-top: 2rem;
+}
+.list:hover{
+    background-color: white;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.modal-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(136, 160, 255);
+    width: 80%;
+    padding: 2rem;
+}
+.modal span{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* Media Query for smartphones */
+@media only screen and (max-width: 600px) {
+    .background{
+        height: 45vh;
+        background-image: url(../../../Assets/viking.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+    }
+    .top{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .movie p{
+        display: none;
+    }
+    .top .signIn{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .top .signIn p{
+        font-size: 2.2rem;
+        font-weight: 1100;
+        color: white;
+        background-color: black;
+    }
+    .top .signIn button{
+        font-size: 1.3rem;
+        margin-top: 0rem;
+    }
+    .top .search{
+        margin-top: 3rem;
+        width: 80%;
+        font-size: 2.2rem;
+    }
+    .mid{
+        display: none;
+    }
+    .mid2{
+        display: block;
+        color: white;
+        padding: 2rem;
+    }
+    .mid2 h1{
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+}
