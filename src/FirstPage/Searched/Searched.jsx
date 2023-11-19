@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Searched.css';
+import './searched.css';
 import { baseUrl } from '../Api';
 import Moviedetails from '../Moviedetails/Moviedetails';
 
