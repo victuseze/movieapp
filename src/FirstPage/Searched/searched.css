@@ -25,3 +25,15 @@
     font-size: 3rem;
     font-weight: bolder;
 }
+
+
+/* Media Query for smartphones */
+@media only screen and (max-width: 600px) {
+    .searched-cards{
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .searched-cards img{
+        width: 50%;
+    }
+}

@@ -4,7 +4,6 @@ import './header.css'
 import Search from '../Search/Search'
 import Searched from '../Searched/Searched'
 import WatchList from '../Watchlist/Watchlist'
-import Welcome from '../../assets/Loginpage/Welcomepage/Welcome'
 
 
 const Header = ({username, userUid}) => {
@@ -58,7 +57,10 @@ const Header = ({username, userUid}) => {
           <div className="mid2">
             <h1>Viking:</h1>
             <p>Viking Prince Einar (Kirk Douglas) doesn't know it, <br /> but his most fearsome enemy, the slave Eric (Tony Curtis), <br /> is actually his half brother...</p>
-            <button> <a href="https://www.youtube.com/watch?v=Yi4YnwFT7Gk">Watch Trailer</a> </button>
+            <div className="mid2-btn">
+              <button> <a href="https://www.youtube.com/watch?v=Yi4YnwFT7Gk">Watch Trailer</a> </button>
+              <button className='listNew' onClick={clickWatchList}>Your WatchList <i className="fa fa-archive" aria-hidden="true"></i></button>
+            </div>
           </div>
         </div>
         {showWatchList && (

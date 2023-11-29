@@ -13,4 +13,16 @@
 }
  
 
+
+/* Media Query for smartphones */
+@media only screen and (max-width: 600px) {
+    .card-tiles{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-tiles img{
+        font-size: 0.5rem;
+        width: 100%;
+    }
+}
   

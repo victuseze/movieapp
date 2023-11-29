@@ -1,8 +1,8 @@
 import {createUserWithEmailAndPassword} from 'firebase/auth'
 import React, { useState } from 'react'
-import './signup.css'
+import './Signup.css'
 import {auth} from '../Firebase'
-// import Welcome from '../Welcomepage/Welcome'
+
 
 const Signup = () => {
 
@@ -28,13 +28,11 @@ const Signup = () => {
       console.log(email)
       console.log(password)
       alert('Yay, Account Successfully Created!')
-      // onSubmit(userName)
     })
     .catch((e) => {
       console.log(e.message)
     })
   }
-
 
   return (
     <form onSubmit={submit}>
@@ -44,12 +42,12 @@ const Signup = () => {
             <h1>Movie App</h1>
           </div>
           <div id="main">
-              <input id='in' type="email" placeholder='email' value={email} onChange={handleEmail}/>
-              <input id='in' type="password" placeholder='password' value={password} onChange={handlePassword}/>
+              <input type="email" placeholder='email' value={email} onChange={handleEmail}/>
+              <input type="password" placeholder='password' value={password} onChange={handlePassword}/>
               <div className="create">
                 <button id='btn' type='submit'>Create Account</button>
               </div>
-              <p>Already have an account? <a href="Welcome">Log in</a></p>
+              <p>Already have an account? <a href="Welcome">Log In</a> </p>
           </div>
         </div>
       </div>

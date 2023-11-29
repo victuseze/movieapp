@@ -1,4 +1,3 @@
-// WatchList.jsx
 import React, { useEffect, useState } from "react";
 import { openWatchList, removeData } from "../../assets/Loginpage/Firebase";
 
@@ -18,7 +17,7 @@ const WatchList = ({userUid}) => {
   };
 
   return (
-    <div>
+    <div className="watchList">
       <h1>WatchList</h1>
       {watchlist.length > 0 ? (
         <ul>

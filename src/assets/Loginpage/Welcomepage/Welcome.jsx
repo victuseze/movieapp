@@ -86,17 +86,16 @@ const Welcome = () => {
                     <div className="header">
                         <h2>Welcome</h2>
                     </div>
-                    <div className="body">
+                    <div className="welcome-body">
                         <input type="text" placeholder='username' value={userName} onChange={handleUserName}/>
                         <input type="email" placeholder='email' value={email} onChange={handleEmail}/>
                         <input type="password" placeholder='password' value={password} name='email' onChange={handlePassword} required/>
                     </div>
                     <div className="signs">
-                        {/* <button className='signin' id='btn' onClick={handleShowsignin}>SignIn</button> */}
-                        <button className='signin' id='btn' onClick={handleSignin}>SignIn</button>
-                        <button className='signup' id='btn' onClick={handleShowsignup}>SignUp</button>
+                        <button className='signin' id='btn' onClick={handleSignin}>Sign In</button>
+                        <button className='signup' id='btn' onClick={handleShowsignup}>Sign Up</button>
                     </div>
-                    <a href="#">forgot password</a>
+                    <a href="#">forgot password?</a>
                 </div>
             </div>
         </>  )
